@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/VecAdd.dir/host.cpp.o  -o VecAdd  cudaCode/libGPU.a /usr/local/cuda/lib64/libcudart_static.a -lpthread -ldl -lrt 

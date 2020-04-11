@@ -1,0 +1,6 @@
+/home/fug/software/AIR-master/src/Build/CMakeFiles/rebuild_cache.dir
+/home/fug/software/AIR-master/src/Build/CMakeFiles/edit_cache.dir
+/home/fug/software/AIR-master/src/Build/CMakeFiles/VecAdd.dir
+/home/fug/software/AIR-master/src/Build/cudaCode/CMakeFiles/rebuild_cache.dir
+/home/fug/software/AIR-master/src/Build/cudaCode/CMakeFiles/edit_cache.dir
+/home/fug/software/AIR-master/src/Build/cudaCode/CMakeFiles/GPU.dir
