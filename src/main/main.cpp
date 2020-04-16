@@ -3,7 +3,7 @@
 #include <iostream>
 #include "../usecases/MapReduce.hpp"
 #include "../usecases/GpuMR.hpp"
-
+#include "../usecases/GpuMatrixMul.hpp"
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -31,6 +31,13 @@ int main(int argc, char* argv[]) {
 		batchflag = true;
 
 		}	
+		else if(s.compare("GpuMML") == 0){
+		
+		dataflow = new GpuMatrixMul();
+		batchflag = true;
+
+		}	
+
 
 	} 
 	clock_t start, startbatch;

@@ -1,9 +1,9 @@
 # required cmake version
 cmake_minimum_required(VERSION 2.8)
 
-project(VecAdd)
+project(host)
 
-add_executable(VecAdd host.cpp)
+add_executable(host host.cpp)
 
 add_subdirectory(cudaCode)
-target_link_libraries (VecAdd GPU)
+target_link_libraries (host GPU)

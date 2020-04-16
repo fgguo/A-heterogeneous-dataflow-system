@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named VecAdd
+# Target rules for targets named host
 
 # Build rule for target.
-VecAdd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 VecAdd
-.PHONY : VecAdd
+host: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 host
+.PHONY : host
 
 # fast build rule for target.
-VecAdd/fast:
-	$(MAKE) -f CMakeFiles/VecAdd.dir/build.make CMakeFiles/VecAdd.dir/build
-.PHONY : VecAdd/fast
+host/fast:
+	$(MAKE) -f CMakeFiles/host.dir/build.make CMakeFiles/host.dir/build
+.PHONY : host/fast
 
 #=============================================================================
 # Target rules for targets named GPU
@@ -142,7 +142,7 @@ host.o: host.cpp.o
 
 # target to build an object file
 host.cpp.o:
-	$(MAKE) -f CMakeFiles/VecAdd.dir/build.make CMakeFiles/VecAdd.dir/host.cpp.o
+	$(MAKE) -f CMakeFiles/host.dir/build.make CMakeFiles/host.dir/host.cpp.o
 .PHONY : host.cpp.o
 
 host.i: host.cpp.i
@@ -151,7 +151,7 @@ host.i: host.cpp.i
 
 # target to preprocess a source file
 host.cpp.i:
-	$(MAKE) -f CMakeFiles/VecAdd.dir/build.make CMakeFiles/VecAdd.dir/host.cpp.i
+	$(MAKE) -f CMakeFiles/host.dir/build.make CMakeFiles/host.dir/host.cpp.i
 .PHONY : host.cpp.i
 
 host.s: host.cpp.s
@@ -160,7 +160,7 @@ host.s: host.cpp.s
 
 # target to generate assembly for a file
 host.cpp.s:
-	$(MAKE) -f CMakeFiles/VecAdd.dir/build.make CMakeFiles/VecAdd.dir/host.cpp.s
+	$(MAKE) -f CMakeFiles/host.dir/build.make CMakeFiles/host.dir/host.cpp.s
 .PHONY : host.cpp.s
 
 # Help Target
@@ -171,7 +171,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... VecAdd"
+	@echo "... host"
 	@echo "... GPU"
 	@echo "... host.o"
 	@echo "... host.i"

@@ -1,4 +1,9 @@
-
+/*
+ * GpuMR.hpp
+ *
+ *  Created on: 4 10, 2020
+ *      Author: Fu GUo
+ */
 
 #include "GpuMR.hpp"
 

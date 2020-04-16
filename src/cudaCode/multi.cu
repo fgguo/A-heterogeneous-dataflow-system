@@ -2,13 +2,6 @@
 #include <pthread.h>
 #include <unistd.h>
 #include <iostream>
-#include <list>
-#include <vector>
-//#include "../usecases/MapReduce.hpp"
-//#include "../communication/Message.hpp"
-//#include "../function/Function.hpp"
-//#include "../partitioning/Partition.hpp"
-//#include "../serialization/Serialization.hpp"
 
 using namespace std;
 

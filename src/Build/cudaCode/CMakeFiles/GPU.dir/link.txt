@@ -1,2 +1,2 @@
-/usr/bin/ar qc libGPU.a  CMakeFiles/GPU.dir/cp.cpp.o CMakeFiles/GPU.dir/GPU_generated_gpuMap.cu.o CMakeFiles/GPU.dir/GPU_generated_gpuReduce.cu.o CMakeFiles/GPU.dir/GPU_generated_hello.cu.o CMakeFiles/GPU.dir/GPU_generated_multi.cu.o CMakeFiles/GPU.dir/GPU_generated_sum.cu.o
+/usr/bin/ar qc libGPU.a  CMakeFiles/GPU.dir/GPU_generated_MatrixMul.cu.o CMakeFiles/GPU.dir/GPU_generated_gpuMap.cu.o CMakeFiles/GPU.dir/GPU_generated_gpuReduce.cu.o CMakeFiles/GPU.dir/GPU_generated_multi.cu.o CMakeFiles/GPU.dir/GPU_generated_sum.cu.o
 /usr/bin/ranlib libGPU.a

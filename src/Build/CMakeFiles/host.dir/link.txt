@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/host.dir/host.cpp.o  -o host  cudaCode/libGPU.a -Wl,-Bstatic -lcudart_static -Wl,-Bdynamic -lpthread -ldl -lrt 

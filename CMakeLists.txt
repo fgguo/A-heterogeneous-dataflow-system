@@ -27,6 +27,8 @@ add_executable(AIR
         src/batching/Map.hpp
         src/batching/Reduce.cpp
         src/batching/Reduce.hpp
+	src/batching/MatrixMul.cpp
+        src/batching/MatrixMul.hpp
         src/communication/Message.cpp
         src/communication/Message.hpp
         src/communication/Window.cpp
@@ -34,6 +36,8 @@ add_executable(AIR
         src/configuration/HashConfig.hpp
         src/connector/BinConnector.cpp
         src/connector/BinConnector.hpp
+   	src/connector/DataGenerator.cpp
+        src/connector/DataGenerator.hpp
         src/dataflow/Dataflow.cpp
         src/dataflow/Dataflow.hpp
         src/dataflow/Vertex.cpp
@@ -61,6 +65,8 @@ add_executable(AIR
         src/serialization/Serialization.hpp
         src/usecases/MapReduce.cpp
         src/usecases/MapReduce.hpp
+ 	src/usecases/GpuMatrixMul.cpp
+        src/usecases/GpuMatrixMul.hpp
         src/usecases/GpuMR.cpp
         src/usecases/GpuMR.hpp)
 

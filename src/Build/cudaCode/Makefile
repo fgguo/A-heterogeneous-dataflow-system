@@ -125,33 +125,6 @@ GPU/fast:
 	cd /home/fug/software/AIR-master/src/Build && $(MAKE) -f cudaCode/CMakeFiles/GPU.dir/build.make cudaCode/CMakeFiles/GPU.dir/build
 .PHONY : GPU/fast
 
-cp.o: cp.cpp.o
-
-.PHONY : cp.o
-
-# target to build an object file
-cp.cpp.o:
-	cd /home/fug/software/AIR-master/src/Build && $(MAKE) -f cudaCode/CMakeFiles/GPU.dir/build.make cudaCode/CMakeFiles/GPU.dir/cp.cpp.o
-.PHONY : cp.cpp.o
-
-cp.i: cp.cpp.i
-
-.PHONY : cp.i
-
-# target to preprocess a source file
-cp.cpp.i:
-	cd /home/fug/software/AIR-master/src/Build && $(MAKE) -f cudaCode/CMakeFiles/GPU.dir/build.make cudaCode/CMakeFiles/GPU.dir/cp.cpp.i
-.PHONY : cp.cpp.i
-
-cp.s: cp.cpp.s
-
-.PHONY : cp.s
-
-# target to generate assembly for a file
-cp.cpp.s:
-	cd /home/fug/software/AIR-master/src/Build && $(MAKE) -f cudaCode/CMakeFiles/GPU.dir/build.make cudaCode/CMakeFiles/GPU.dir/cp.cpp.s
-.PHONY : cp.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,9 +134,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... GPU"
-	@echo "... cp.o"
-	@echo "... cp.i"
-	@echo "... cp.s"
 .PHONY : help
 
 

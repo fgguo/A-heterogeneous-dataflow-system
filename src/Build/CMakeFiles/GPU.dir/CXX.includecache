@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fug/software/AIR-master/src/cudaCode/MatrixMul.cuh
+
+/home/fug/software/AIR-master/src/host.cpp
+unistd.h
+-
+iostream
+-
+stdio.h
+-
+cudaCode/MatrixMul.cuh
+/home/fug/software/AIR-master/src/cudaCode/MatrixMul.cuh
+time.h
+-
+string.h
+-
+stdlib.h
+-
+iostream
+-
+

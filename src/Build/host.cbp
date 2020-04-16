@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="host"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cudaCode\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/fug/software/AIR-master/src/Build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/fug/software/AIR-master/src/Build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/fug/software/AIR-master/src/Build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="host">
+				<Option output="/home/fug/software/AIR-master/src/Build/host" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fug/software/AIR-master/src/Build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 host"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="host/fast">
+				<Option output="/home/fug/software/AIR-master/src/Build/host" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fug/software/AIR-master/src/Build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 host/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GPU">
+				<Option output="/home/fug/software/AIR-master/src/Build/cudaCode/libGPU.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fug/software/AIR-master/src/Build/cudaCode"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/cuda-10.0/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/cudaCode/Makefile&quot;  VERBOSE=1 GPU"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/cudaCode/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/cudaCode/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/cudaCode/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GPU/fast">
+				<Option output="/home/fug/software/AIR-master/src/Build/cudaCode/libGPU.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fug/software/AIR-master/src/Build/cudaCode"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/cuda-10.0/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/cudaCode/Makefile&quot;  VERBOSE=1 GPU/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/cudaCode/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/cudaCode/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/fug/software/AIR-master/src/Build/cudaCode/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/fug/software/AIR-master/src/Build/cudaCode/CMakeFiles/GPU.dir/GPU_generated_MatrixMul.cu.o">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/Build/cudaCode/CMakeFiles/GPU.dir/GPU_generated_gpuMap.cu.o">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/Build/cudaCode/CMakeFiles/GPU.dir/GPU_generated_gpuReduce.cu.o">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/Build/cudaCode/CMakeFiles/GPU.dir/GPU_generated_multi.cu.o">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/Build/cudaCode/CMakeFiles/GPU.dir/GPU_generated_sum.cu.o">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/MatrixMul.cu">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/MatrixMul.cuh">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/gpuMap.cu">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/gpuReduce.cu">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/multi.cu">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/multi.cuh">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/sum.cu">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/sum.cuh">
+			<Option target="GPU"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/host.cpp">
+			<Option target="host"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/fug/software/AIR-master/src/cudaCode/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cudaCode\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

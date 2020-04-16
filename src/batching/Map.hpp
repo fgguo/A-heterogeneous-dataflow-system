@@ -1,10 +1,4 @@
 
-/*
- * Map.hpp
- *
- *  Created on: Dec 20, 2017
- *      Author: martin.theobald, amal.tawakuli
- */
 
 #ifndef BATCHING_MAP_HPP_
 #define BATCHING_MAP_HPP_
