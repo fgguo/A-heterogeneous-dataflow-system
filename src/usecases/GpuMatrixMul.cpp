@@ -15,7 +15,7 @@ GpuMatrixMul::GpuMatrixMul() :
 		Dataflow() {
 
 	generator = new DataGenerator(0, rank, worldSize,false);
-	matrixmul = new MatrixMul(1, rank, worldSize,true);
+	matrixmul = new MatrixMul(1, rank, worldSize,false);
 	// Simple chain
 	addLink(generator,matrixmul);
 	generator ->initialize();

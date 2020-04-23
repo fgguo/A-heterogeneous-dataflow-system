@@ -6,6 +6,13 @@ set(CMAKE_CXX_STANDARD 14)
 set(COMPILER_PATH "/usr/local/bin/")
 
 set(CMAKE_CXX_COMPILER "${COMPILER_PATH}/mpic++")
+find_package( OpenCV REQUIRED )
+#添加OpenCV头文件
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+#显示OpenCV_INCLUDE_DIRS的值
+message(${OpenCV_INCLUDE_DIRS})
+
 include_directories(/home/fug/software/AIR-master/local)
 include_directories(include)
 include_directories(include/json)
@@ -29,6 +36,10 @@ add_executable(AIR
         src/batching/Reduce.hpp
 	src/batching/MatrixMul.cpp
         src/batching/MatrixMul.hpp
+	src/batching/Resize.cpp
+        src/batching/Resize.hpp
+	src/batching/Inference.hpp
+	src/batching/Inference.cpp
         src/communication/Message.cpp
         src/communication/Message.hpp
         src/communication/Window.cpp
@@ -38,6 +49,8 @@ add_executable(AIR
         src/connector/BinConnector.hpp
    	src/connector/DataGenerator.cpp
         src/connector/DataGenerator.hpp
+	src/connector/ImageLoad.hpp
+	src/connector/ImageLoad.cpp
         src/dataflow/Dataflow.cpp
         src/dataflow/Dataflow.hpp
         src/dataflow/Vertex.cpp
@@ -67,7 +80,10 @@ add_executable(AIR
         src/usecases/MapReduce.hpp
  	src/usecases/GpuMatrixMul.cpp
         src/usecases/GpuMatrixMul.hpp
+	src/usecases/NNInference.cpp
+        src/usecases/NNInference.hpp
         src/usecases/GpuMR.cpp
         src/usecases/GpuMR.hpp)
 
 target_link_libraries (AIR GPU)
+target_link_libraries(AIR ${OpenCV_LIBS})

@@ -29,9 +29,9 @@ void DataGenerator::batchProcess() {
 
 	if (rank == 0) { // one rank to connect to data and partition
 	//int nRow = 1 << 13,nCol = 1 << 13;
-	int RowA=1 << 3; 
-	int Col = 1 << 3;
-	int ColB = 1 << 3;
+	int RowA=1; 
+	int Col = 128*128 ;
+	int ColB = 512 ;
 	memcpy(&window->buffer[window->size], &RowA, sizeof(int));
 	window->size +=sizeof(int);
 	memcpy(&window->buffer[window->size], &Col, sizeof(int));

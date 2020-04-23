@@ -14,7 +14,7 @@ using namespace std;
 MapReduce::MapReduce() :
 		Dataflow() {
 
-	connector = new BinConnector("../data/INT_64MB.bin", 0, rank, worldSize,false);
+	connector = new BinConnector("../data/test.jpg", 0, rank, worldSize,false);
 	mapper = new Map(new SquareFunction(), 1, rank, worldSize,false);
 	reducer = new Reduce(new SumFunction(), 2, rank, worldSize,false);
 

@@ -1,5 +1,8 @@
-
-
+/*
+ GpuMatrixMul.hpp
+ Created on: 4 13, 2020
+ Author: Fu GUo
+ */
 #ifndef BATCHING_MATRIXMUL_HPP_
 #define BATCHING_MATRIXMUL_HPP_
 

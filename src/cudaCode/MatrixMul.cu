@@ -56,9 +56,16 @@ void CpuMatriMul(char * h){
     	}
 	
 	clock_t cpuend  = clock();
+	memcpy(h,&RowA,sizeof(int));
+	memcpy(h+sizeof(int),&ColB,sizeof(int));
+	h_a = h+2*sizeof(int);//A数组起始地址
 	for(int i=0;i<RowA*ColB;i++){
-		memcpy(h_a, h_C+i,sizeof(double));
+		memcpy(h_a+i*sizeof(double), h_C+i,sizeof(double));
 	}
+	cudaFreeHost(h_A);
+	cudaFreeHost(h_B);
+	cudaFreeHost(h_C);
+
 	double cpulatency = (cpuend   - cpustart  )/ (double) CLOCKS_PER_SEC*1000 ;
 	cout<<"CPU总用时："<<cpulatency <<"ms"<<endl;
 }
@@ -105,10 +112,13 @@ void matrixmul(char * h)
 	MatMatMul<16><<<gridDim, blockDim>>>(d_A, d_B, d_C, RowA, Col, ColB);  
 	cudaDeviceSynchronize();
 	cudaMemcpy(h_C, d_C, ColB*RowA*sizeof(double), cudaMemcpyDeviceToHost);
-	
+	memcpy(h,&RowA,sizeof(int));
+	memcpy(h+sizeof(int),&ColB,sizeof(int));
+	h_a = h+2*sizeof(int);//A数组起始地址
 	for(int i=0;i<RowA*ColB;i++){
 		memcpy(h_a+i*sizeof(double), h_C+i,sizeof(double));
 	}
+	cudaFreeHost(h_C);
 	cudaFree(d_A);
 	cudaFree(d_B);
 	cudaFree(d_C);

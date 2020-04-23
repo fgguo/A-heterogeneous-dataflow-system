@@ -4,6 +4,7 @@
 #include "../usecases/MapReduce.hpp"
 #include "../usecases/GpuMR.hpp"
 #include "../usecases/GpuMatrixMul.hpp"
+#include "../usecases/NNInference.hpp"
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -32,11 +33,15 @@ int main(int argc, char* argv[]) {
 
 		}	
 		else if(s.compare("GpuMML") == 0){
-		
 		dataflow = new GpuMatrixMul();
 		batchflag = true;
 
 		}	
+		else if(s.compare("NN") == 0){
+		dataflow = new NNInference();
+		batchflag = true;
+
+		}
 
 
 	} 
@@ -53,9 +58,6 @@ int main(int argc, char* argv[]) {
 			double batchlatency = (clock() - startbatch)
 					/ (double) CLOCKS_PER_SEC * 1000; //batch latency calculation
 
-			cout << "BATCH-" << i + 1 << " COMPLETED IN " << batchlatency
-					<< " MSEC (" << batchlatency / 60000 << " MIN) @ "
-					<< dataflow->rank << endl;
 		}
 
 	} else {
